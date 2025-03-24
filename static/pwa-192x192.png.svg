@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" fill="#4CAF50" />
+  <text x="96" y="96" font-family="Arial" font-size="24" fill="white" text-anchor="middle" dominant-baseline="middle">EV Booking</text>
+  <circle cx="96" cy="120" r="40" fill="white" />
+  <path d="M76 120 L116 120 M96 100 L96 140" stroke="#4CAF50" stroke-width="8" />
+</svg>

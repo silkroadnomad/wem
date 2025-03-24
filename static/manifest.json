@@ -1,0 +1,31 @@
+{
+  "name": "World Electric Mobility",
+  "short_name": "WEM",
+  "description": "Buchen, entsperren und bezahlen Sie Elektrofahrzeuge in Thailand",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "pwa-192x192.png.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "pwa-512x512.png.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "pwa-512x512.png.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "orientation": "portrait",
+  "categories": ["travel", "transportation", "booking"],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
