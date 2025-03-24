@@ -41,9 +41,24 @@ export default defineConfig({
 					}
 				]
 			},
-			strategies: 'injectManifest',
-			injectManifest: {
-				injectionPoint: undefined
+			// Änderung der Strategie von 'injectManifest' zu 'generateSW'
+			// damit der Service Worker automatisch generiert wird
+			strategies: 'generateSW',
+			workbox: {
+				globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+				runtimeCaching: [
+					{
+						urlPattern: /^https:\/\/placehold\.co\/.*/i,
+						handler: 'CacheFirst',
+						options: {
+							cacheName: 'image-cache',
+							expiration: {
+								maxEntries: 50,
+								maxAgeSeconds: 60 * 60 * 24 * 30 // 30 Tage
+							}
+						}
+					}
+				]
 			},
 			devOptions: {
 				enabled: true,
